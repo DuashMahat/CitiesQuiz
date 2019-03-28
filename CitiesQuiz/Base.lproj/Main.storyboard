@@ -20,7 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvh-h6-dc4">
                                 <rect key="frame" x="118" y="492" width="139" height="64"/>
-                                <color key="backgroundColor" red="0.21573623159999999" green="0.35625515679999997" blue="0.18756490349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="PG6-sm-t7d"/>
                                     <constraint firstAttribute="height" constant="64" id="xee-Le-CgH"/>
@@ -34,25 +34,35 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huK-vR-FuS" userLabel="Question Label">
                                 <rect key="frame" x="4" y="143" width="366" height="290"/>
-                                <color key="backgroundColor" red="0.21573623159999999" green="0.35625515679999997" blue="0.18756490349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.072053155879999997" green="0.10538065150000001" blue="0.40309169189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="290" id="VBs-rl-U9C"/>
                                     <constraint firstAttribute="width" constant="366" id="u9y-BS-auB"/>
                                 </constraints>
-                                <string key="text">This is a city Quiz. How this works is , once you start the quiz you proviided with the name of a city and you will choose YES if it is a capital of a country and NO if it is not . If you make one incorrect choice , you will start the quiz from the start. This means , the quiz will only end succesfully if you make PERFECT choices till the end. Ok ! lets go and start the Quiz by clicking on the  Start Quiz below !</string>
+                                <string key="text">Choose if the city given is a capital or not. If you miss one choice , you will restart the quiz from start. You get congratulation message only if your guesses are 100% correct.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-rm-NEc">
+                                <rect key="frame" x="4" y="20" width="141" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="1sC-L7-Qsn"/>
+                                    <constraint firstAttribute="width" constant="141" id="cR2-jq-EEe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.21573623159999999" green="0.35625515679999997" blue="0.18756490349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.072053155879999997" green="0.10538065150000001" blue="0.40309169189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2aO-0q-aSW"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72o-6z-QRM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uvh-h6-dc4" secondAttribute="bottom" constant="111" id="CSo-FB-6v7"/>
+                            <constraint firstItem="huK-vR-FuS" firstAttribute="top" secondItem="NGu-rm-NEc" secondAttribute="bottom" constant="8" id="IjQ-sN-Nh5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uvh-h6-dc4" secondAttribute="trailing" constant="118" id="PIW-q0-lLz"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Rk1-pw-gKB"/>
                             <constraint firstItem="uvh-h6-dc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="XUE-8r-1um"/>
+                            <constraint firstItem="NGu-rm-NEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YgG-UR-gzH"/>
+                            <constraint firstItem="NGu-rm-NEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="bfJ-gE-Ive"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="qYI-md-bG6"/>
                             <constraint firstItem="uvh-h6-dc4" firstAttribute="top" secondItem="huK-vR-FuS" secondAttribute="bottom" constant="59" id="si8-cT-4ep"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huK-vR-FuS" secondAttribute="trailing" constant="5" id="tua-O9-kYA"/>
@@ -274,4 +284,7 @@
             <point key="canvasLocation" x="613.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" width="4312" height="2128"/>
+    </resources>
 </document>
