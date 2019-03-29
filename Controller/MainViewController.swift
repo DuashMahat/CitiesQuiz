@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var citiesImage: UIImageView!
     //Place your instance variables here
+    @IBOutlet weak var QuestionLabel2: UILabel!
     @IBOutlet weak var textLableFun: UILabel!
     @IBOutlet weak var onClickOne: UIButton!
     @IBOutlet weak var onClickTwo: UIButton!
@@ -71,6 +72,7 @@ class MainViewController: UIViewController {
         midQuessesScore()
         updateCities()
         questionLabelText()
+        centerAlign()
     }
     
     
@@ -81,7 +83,7 @@ class MainViewController: UIViewController {
     
     func nextQuestion() {
         if (questionNumber <= 27 ) {
-            questionLabel.text = allQuestions.list[questionNumber].city
+            QuestionLabel2.text = allQuestions.list[questionNumber].city
 
             
             //              FunLabel.text = allQuestions.list[questionNumber].fun
@@ -171,80 +173,80 @@ class MainViewController: UIViewController {
     }
     
     func updateCities () {
-        if (questionLabel.text == "Sydney") {
+        if ( QuestionLabel2.text == "Sydney") {
             citiesImage.image = UIImage(named: "sydney")
-        } else if (questionLabel.text == "Nairobi" ) {
+        } else if ( QuestionLabel2.text == "Nairobi" ) {
             citiesImage.image = UIImage(named: "nairobi")
-        } else if (questionLabel.text == "New York") {
+        } else if ( QuestionLabel2.text == "New York") {
             citiesImage.image = UIImage(named: "newyork")
         }
-        else if (questionLabel.text == "Addis Ababa") {
+        else if ( QuestionLabel2.text == "Addis Ababa") {
             citiesImage.image = UIImage(named: "addis")
         }
-        else if (questionLabel.text == "London") {
+        else if ( QuestionLabel2.text == "London") {
             citiesImage.image = UIImage(named: "london")
         }
-        else if (questionLabel.text == "Djibouti") {
+        else if ( QuestionLabel2.text == "Djibouti") {
             citiesImage.image = UIImage(named: "djib")
-        }else if (questionLabel.text == "Barcelona") {
+        }else if ( QuestionLabel2.text == "Barcelona") {
             citiesImage.image = UIImage(named: "barcelona")
         }
-        else if (questionLabel.text == "Mogadishu") {
+        else if ( QuestionLabel2.text == "Mogadishu") {
             citiesImage.image = UIImage(named: "mogadishu")
-        }else if (questionLabel.text == "Toronto") {
+        }else if ( QuestionLabel2.text == "Toronto") {
             citiesImage.image = UIImage(named: "toronto")
         }
-        else if (questionLabel.text == "Munich") {
+        else if ( QuestionLabel2.text == "Munich") {
             citiesImage.image = UIImage(named: "munich")
         }
-        else if (questionLabel.text == "Rome") {
+        else if ( QuestionLabel2.text == "Rome") {
             citiesImage.image = UIImage(named: "rome")
         }
-        else if (questionLabel.text == "Zagreb") {
+        else if ( QuestionLabel2.text == "Zagreb") {
             citiesImage.image = UIImage(named: "zaqreb")
-        }else if (questionLabel.text == "Dubai") {
+        }else if ( QuestionLabel2.text == "Dubai") {
             citiesImage.image = UIImage(named: "dubai")
         }
-        else if (questionLabel.text == "Kampala") {
+        else if ( QuestionLabel2.text == "Kampala") {
             citiesImage.image = UIImage(named: "kampala")
-        }else if (questionLabel.text == "Zurich") {
+        }else if ( QuestionLabel2.text == "Zurich") {
             citiesImage.image = UIImage(named: "zurich")
         }
-        else if (questionLabel.text == "Montreal") {
+        else if ( QuestionLabel2.text == "Montreal") {
             citiesImage.image = UIImage(named: "montreal")
         }
-        else if (questionLabel.text == "Dresden") {
+        else if ( QuestionLabel2.text == "Dresden") {
             citiesImage.image = UIImage(named: "dresden")
         }
-        else if (questionLabel.text == "Bamako") {
+        else if ( QuestionLabel2.text == "Bamako") {
             citiesImage.image = UIImage(named: "bamako")
-        }else if (questionLabel.text == "Shanghai") {
+        }else if ( QuestionLabel2.text == "Shanghai") {
             citiesImage.image = UIImage(named: "shanghai")
         }
-        else if (questionLabel.text == "Paris") {
+        else if ( QuestionLabel2.text == "Paris") {
             citiesImage.image = UIImage(named: "paris")
-        }else if (questionLabel.text == "Munich") {
+        }else if ( QuestionLabel2.text == "Munich") {
             citiesImage.image = UIImage(named: "munich")
         }
-        else if (questionLabel.text == "Manila") {
+        else if ( QuestionLabel2.text == "Manila") {
             citiesImage.image = UIImage(named: "manila")
         }
-        else if (questionLabel.text == "Bangkok") {
+        else if ( QuestionLabel2.text == "Bangkok") {
             citiesImage.image = UIImage(named: "bank")
-        }else if (questionLabel.text == "Algiers") {
+        }else if ( QuestionLabel2.text == "Algiers") {
             citiesImage.image = UIImage(named: "algiers")
         }
-        else if (questionLabel.text == "Lagos") {
+        else if ( QuestionLabel2.text == "Lagos") {
             citiesImage.image = UIImage(named: "lagos")
         }
-        else if (questionLabel.text == "Berlin") {
+        else if ( QuestionLabel2.text == "Berlin") {
             citiesImage.image = UIImage(named: "berlin")
-        }else if (questionLabel.text == "Cairo") {
+        }else if ( QuestionLabel2.text == "Cairo") {
             citiesImage.image = UIImage(named: "cairo")
         }
-        else if (questionLabel.text == "Lisbon") {
+        else if ( QuestionLabel2.text == "Lisbon") {
             citiesImage.image = UIImage(named: "lisbon")
-        }else if (questionLabel.text == "Johanesburg") {
+        }else if ( QuestionLabel2.text == "Johanesburg") {
             citiesImage.image = UIImage(named: "johan")
         }
         else {
@@ -253,7 +255,11 @@ class MainViewController: UIViewController {
     }
     
     func questionLabelText () {
-     questionLabel.textColor = UIColor.green
+     QuestionLabel2.textColor = UIColor.green
+    }
+    
+    func centerAlign() {
+        QuestionLabel2.textAlignment = .center
     }
     
 }
