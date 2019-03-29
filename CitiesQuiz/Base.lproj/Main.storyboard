@@ -45,10 +45,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-rm-NEc">
-                                <rect key="frame" x="4" y="20" width="141" height="115"/>
+                                <rect key="frame" x="116" y="20" width="141" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="1sC-L7-Qsn"/>
-                                    <constraint firstAttribute="width" constant="141" id="cR2-jq-EEe"/>
+                                    <constraint firstAttribute="width" constant="141" id="Fmg-5J-raO"/>
+                                    <constraint firstAttribute="height" constant="115" id="XHv-7v-MVF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -56,13 +56,14 @@
                         <constraints>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2aO-0q-aSW"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72o-6z-QRM"/>
+                            <constraint firstItem="NGu-rm-NEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="8An-IN-ULI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NGu-rm-NEc" secondAttribute="trailing" constant="118" id="CIl-rQ-LuH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uvh-h6-dc4" secondAttribute="bottom" constant="111" id="CSo-FB-6v7"/>
-                            <constraint firstItem="huK-vR-FuS" firstAttribute="top" secondItem="NGu-rm-NEc" secondAttribute="bottom" constant="8" id="IjQ-sN-Nh5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uvh-h6-dc4" secondAttribute="trailing" constant="118" id="PIW-q0-lLz"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Rk1-pw-gKB"/>
                             <constraint firstItem="uvh-h6-dc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="XUE-8r-1um"/>
-                            <constraint firstItem="NGu-rm-NEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YgG-UR-gzH"/>
-                            <constraint firstItem="NGu-rm-NEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="bfJ-gE-Ive"/>
+                            <constraint firstItem="NGu-rm-NEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d1d-vq-2sT"/>
+                            <constraint firstItem="huK-vR-FuS" firstAttribute="top" secondItem="NGu-rm-NEc" secondAttribute="bottom" constant="8" id="oK2-ht-cu0"/>
                             <constraint firstItem="huK-vR-FuS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="qYI-md-bG6"/>
                             <constraint firstItem="uvh-h6-dc4" firstAttribute="top" secondItem="huK-vR-FuS" secondAttribute="bottom" constant="59" id="si8-cT-4ep"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huK-vR-FuS" secondAttribute="trailing" constant="5" id="tua-O9-kYA"/>
