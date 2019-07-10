@@ -3,7 +3,6 @@ An iOS app for fun cities quiz
 
 
 
-![Alt text](/images/citiesQuiz11.png?raw=true "Optional Title")
 
 ![Alt text](/images/topics.png?raw=true "Optional Title")
 
